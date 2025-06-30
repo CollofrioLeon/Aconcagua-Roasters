@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ventas | Aconcagua Roasters</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+       body { background: url('https://media.istockphoto.com/id/1135359711/es/foto/granos-de-caf%C3%A9-tostado-cayendo.jpg?s=612x612&w=0&k=20&c=mChUSXMF2rRctYa7VeleKI3YOF00KLBSYwAvgxdvuqA=') no-repeat center center fixed; background-size: cover; }
+        .bg-overlay { background: rgba(111, 78, 55, 0.5); position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 0; }
+        .main-content, footer, .sobre-nosotros-section { position: relative; z-index: 1; }
+        .navbar { background: rgba(255,255,255,0.95) !important; box-shadow: 0 2px 8px rgba(111,78,55,0.10); }
+        .navbar-brand, .nav-link { color: #6f4e37 !important; font-weight: 600; }
+        .nav-link.active, .nav-link:hover { background: #a67c52 !important; color: #fff !important; border-radius: 5px; }
+        .section-bg { background: rgba(255,255,255,0.93); border-radius: 18px; margin: 40px 0; box-shadow: 0 4px 24px rgba(111, 78, 55, 0.13);}
+        .card-title { color: #a67c52; }
+        .btn-cafe { background: #a67c52; color: #fff; font-weight: bold; }
+        .btn-cafe:hover { background: #6f4e37; color: #fff; }
+        .sobre-nosotros-section h2 { color: #a67c52; text-align: center; }
+        .sobre-nosotros-section p { font-size: 1.1rem; color: #3e2723; }
+        footer { background: rgba(255,255,255,0.97); color: #6f4e37; text-align: center; padding: 18px 0; font-size: 1rem; letter-spacing: 1px; box-shadow: 0 -2px 8px rgba(111,78,55,0.10); border-top-left-radius: 24px; border-top-right-radius: 24px; margin-top: 30px; }
+        .table th, .table td { vertical-align: middle; }
+    </style>
+</head>
+<body>
+    <div class="bg-overlay"></div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Aconcagua Roasters</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="ventas.html">Ventas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cursos.html">Cursos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Título -->
+    <section class="main-content py-5">
+        <div class="container text-center">
+            <h1 class="display-5" style="color:#000000;">Ventas de Café Latinoamericano</h1>
+            <p class="lead">Descubre nuestra selección de cafés de origen y consulta precios para minoristas y mayoristas.</p>
+        </div>
+    </section>
+
+    <!-- Cafés en tarjetas -->
+    <section class="section-bg py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" style="color:#815800;">Variedades disponibles</h2>
+            <div class="row g-4 justify-content-center">
+                <!-- Colombia -->
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-3">
+                        <img src="https://tiendadecafe.com.ar/wp-content/uploads/2021/03/Productos_cafe_packs_beans01-600x600.jpg" alt="Café Colombia" class="mx-auto mb-3" width="100" height="100" style="border-radius:50%;">
+                        <div class="card-body">
+                            <h5 class="card-title">Blend de La Casa</h5>
+                            <p class="card-text">Colombia-Brasil Notas dulces, acidez media y cuerpo balanceado.</p>
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Minorista</th>
+                                        <th>Mayorista</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1kg</td>
+                                        <td>$22.000</td>
+                                        <td>$19.500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Molido</td>
+                                        <td>$23.200</td>
+                                        <td>$19.700</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <button class="https://ineffablecoffee.com/cdn/shop/articles/cafe-brasil-mantiqueira-4_abd9b6fc-c329-41cb-8ac9-00a9a50c8fa4.jpg?v=1742709385&width=2048" type="button" data-bs-toggle="collapse" data-bs-target="#colombia">Ver más</button>
+                            <div class="collapse mt-3" id="colombia">
+                                <div class="card card-body text-start">
+                                    Café de altura cultivado en las montañas colombianas. Ideal para quienes buscan un café suave y aromático, perfecto para cualquier momento del día.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Brasil -->
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-3">
+                        <img src="https://ineffablecoffee.com/cdn/shop/articles/cafe-brasil-mantiqueira-4_abd9b6fc-c329-41cb-8ac9-00a9a50c8fa4.jpg?v=1742709385&width=2048" alt="Café Brasil" class="mx-auto mb-3" width="100" height="100" style="border-radius:50%;">
+                        <div class="card-body">
+                            <h5 class="card-title">Brasil Santos</h5>
+                            <p class="card-text">Cuerpo intenso, baja acidez y notas a chocolate.</p>
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Minorista</th>
+                                        <th>Mayorista</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1kg</td>
+                                        <td>$17.500</td>
+                                        <td>$13.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Molido</td>
+                                        <td>$17.700</td>
+                                        <td>$16.200</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <button class="btn btn-cafe" type="button" data-bs-toggle="collapse" data-bs-target="#brasil">Ver más</button>
+                            <div class="collapse mt-3" id="brasil">
+                                <div class="card card-body text-start">
+                                    Café clásico de Brasil, muy apreciado por su sabor suave y dulzor natural. Ideal para espresso y preparaciones con leche.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Perú -->
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-3">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCy4snz9lgOeY6t03uzO97ra37SWgRuPG06Q&s" alt="Café Perú" class="mx-auto mb-3" width="100" height="100" style="border-radius:50%;">
+                        <div class="card-body">
+                            <h5 class="card-title">Perú Orgánico</h5>
+                            <p class="card-text">Aromas florales, acidez brillante y producción sustentable.</p>
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Minorista</th>
+                                        <th>Mayorista</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1kg</td>
+                                        <td>$18.500</td>
+                                        <td>$17.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Molido</td>
+                                        <td>$18.700</td>
+                                        <td>$17.200</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <button class="btn btn-cafe" type="button" data-bs-toggle="collapse" data-bs-target="#peru">Ver más</button>
+                            <div class="collapse mt-3" id="peru">
+                                <div class="card card-body text-start">
+                                    Café orgánico certificado, cultivado en la selva alta peruana. Perfecto para quienes buscan un café con impacto social y ambiental positivo.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Agrega más cafés si lo deseas -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Envíos por región -->
+    <section class="section-bg py-5">
+        <div class="container">
+            <h2 class="text-center mb-4" style="color:#6f4e37;">Envíos internacionales</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <h5 class="mb-3" style="color:#a67c52;">Sudamérica</h5>
+                    <ul>
+                        <li>Argentina</li>
+                        <li>Chile</li>
+                        <li>Uruguay</li>
+                        <li>Brasil</li>
+                        <li>Paraguay</li>
+                        <li>Perú</li>
+                        <li>Colombia</li>
+                    </ul>
+                    <h5 class="mb-3 mt-4" style="color:#a67c52;">Centroamérica</h5>
+                    <ul>
+                        <li>México</li>
+                        <li>Costa Rica</li>
+                        <li>Panamá</li>
+                        <li>Guatemala</li>
+                    </ul>
+                    <h5 class="mb-3 mt-4" style="color:#a67c52;">Norteamérica</h5>
+                    <ul>
+                        <li>Estados Unidos</li>
+                        <li>Canadá</li>
+                    </ul>
+                    <h5 class="mb-3 mt-4" style="color:#a67c52;">Europa</h5>
+                    <ul>
+                        <li>España</li>
+                        <li>Italia</li>
+                        <li>Alemania</li>
+                        <li>Francia</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p class="lead">¿No ves tu país? ¡Consultanos por envíos especiales!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <section class="sobre-nosotros-section section-bg py-4">
+        <div class="container">
+            <h2 class="mb-3">Sobre Aconcagua Roasters</h2>
+            <p>
+                <b>Aconcagua Roasters</b> es un pequeño tostadero de café artesanal nacido del sueño de compartir el verdadero sabor del café de especialidad. Comenzamos como un emprendimiento familiar, tostando pequeños lotes en el corazón del barrio, y hoy queremos que más personas conozcan nuestra pasión por el café.
+            </p>
+            <p>
+                Nuestros productos más vendidos son el <b>Café en Grano Clásico</b> y el <b>Blend de la Casa</b>, elegidos tanto por minoristas como por cafeterías y comercios locales. Creemos en la calidad, la frescura y el trato directo con nuestros clientes.
+            </p>
+            <p>
+                Realizamos talleres y cursos porque queremos compartir el arte del café: desde el tostado y la molienda hasta la preparación de la taza perfecta. ¡Sumate a nuestra comunidad y descubrí el mundo del café con nosotros!
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Aconcagua Roasters</p>
+        </div>
+        <footer class="footer mt-4">
+  <div class="p-3 bg-light rounded">
+    <p><b>Email:</b> <a href="mailto:leon.Onofrio@tostaderocafe.com">leon.Onofrio@tostaderocafe.com</a></p>
+    <p><b>Tel:</b> 2613439599</p>
+    <p><b>Dirección:</b> Las Heras 599, Godoy Cruz, Mendoza</p>
+  </div>
+</footer>
+    </footer>
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

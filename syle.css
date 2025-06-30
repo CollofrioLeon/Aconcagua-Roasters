@@ -1,0 +1,138 @@
+/* Fondo con imagen y superposición */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    min-height: 100vh;
+    position: relative;
+    background: url('descarga.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    z-index: 1;
+}
+
+.background-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    background: rgba(111, 78, 55, 0.45); /* filtro café */
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Encabezado fijo y separado */
+header {
+    position: relative;
+    z-index: 2;
+    background: rgba(255,255,255,0.92);
+    box-shadow: 0 2px 8px rgba(111,78,55,0.10);
+    padding: 30px 0 10px 0;
+    text-align: center;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #6f4e37;
+    margin-bottom: 10px;
+}
+
+nav a {
+    color: #6f4e37;
+    margin: 0 18px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+nav a:hover, nav a.active {
+    background: #a67c52;
+    color: #fff;
+}
+
+/* Contenido central destacado */
+main {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 40px auto 40px auto;
+    padding: 40px 30px;
+    background: rgba(255,255,255,0.93);
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(111, 78, 55, 0.13);
+    min-height: 300px;
+}
+
+main h2 {
+    color: #a67c52;
+    margin-bottom: 18px;
+    font-size: 2rem;
+}
+
+main img {
+    display: block;
+    margin: 25px auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(166,124,82,0.15);
+    max-width: 100%;
+}
+.sobre-nosotros-section {
+    background: rgba(255,255,255,0.93);
+    border-radius: 18px;
+    margin: 40px 0;
+    box-shadow: 0 4px 24px rgba(111, 78, 55, 0.13);
+}
+.sobre-nosotros-section h2 {
+    color: #a67c52;
+    text-align: center;
+}
+.sobre-nosotros-section p {
+    font-size: 1.1rem;
+    color: #3e2723;
+}
+
+/* Pie de página separado */
+footer {
+    position: relative;
+    z-index: 2;
+    background: rgba(255,255,255,0.92);
+    color: #6f4e37;
+    text-align: center;
+    padding: 30px 0 18px 0;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    box-shadow: 0 -2px 8px rgba(111,78,55,0.10);
+    margin-top: 40px;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+    color: #a67c52;
+}
+
+footer p {
+    margin-bottom: 6px;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 18px 6px;
+        border-radius: 0;
+        margin: 0;
+    }
+    header, footer {
+        border-radius: 0;
+        padding: 18px 0 8px 0;
+    }
+    header h1 {
+        font-size: 1.3rem;
+    }
+}

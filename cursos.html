@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cursos | Aconcagua Roasters</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background: url('fondo-cafe.jpg') no-repeat center center fixed; background-size: cover; }
+        .bg-overlay { background: rgba(111, 78, 55, 0.5); position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 0; }
+        .main-content, footer { position: relative; z-index: 1; }
+        .navbar { background: rgba(255,255,255,0.95) !important; box-shadow: 0 2px 8px rgba(111,78,55,0.10); }
+        .navbar-brand, .nav-link { color: #6f4e37 !important; font-weight: 600; }
+        .nav-link.active, .nav-link:hover { background: #a67c52 !important; color: #fff !important; border-radius: 5px; }
+        footer { background: rgba(255,255,255,0.97); color: #6f4e37; text-align: center; padding: 18px 0; font-size: 1rem; letter-spacing: 1px; box-shadow: 0 -2px 8px rgba(111,78,55,0.10); border-top-left-radius: 24px; border-top-right-radius: 24px; margin-top: 30px; }
+    </style>
+</head>
+<body>
+    <div class="bg-overlay"></div>
+    <!-- Navbar -->
+    <!-- Pega aquí el código de la navbar, cambiando la clase active a Cursos -->
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Aconcagua Roasters</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ventas.html">Ventas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="cursos.html">Cursos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="main-content py-5">
+  <div class="container">
+    <h1 class="mb-4 text-center" style="color:#6f4e37; font-weight:bold;">☕ Nuestros Cursos de Café</h1>
+    <p class="lead text-center">Descubre el fascinante mundo del café: aprende, degusta y conviértete en un experto. ¡Cursos para todos los niveles!</p>
+    <div class="row g-4">
+      <!-- Curso 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title"><i class="bi bi-cup-hot"></i> Barista Inicial</h5>
+            <p class="card-text">Comienza la primera semana de cada mes. ¡Solo 5 clases intensivas para dominar las bases del barismo!</p>
+            <ul>
+              <li>Ideal para principiantes</li>
+              <li>Incluye degustaciones</li>
+              <li>Certificado al finalizar</li>
+            </ul>
+            <a href="contacto.html" class="btn btn-outline-success mt-2">¡Quiero inscribirme!</a>
+          </div>
+        </div>
+      </div>
+      <!-- Curso 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title"><i class="bi bi-emoji-sunglasses"></i> Cata de Café</h5>
+            <p class="card-text">Una clase mensual con catadores invitados. Cada encuentro, una experiencia y un sabor diferente.</p>
+            <ul>
+              <li>Aprende a identificar aromas y sabores</li>
+              <li>Invitados especiales en cada clase</li>
+              <li>Incluye kit de cata</li>
+            </ul>
+            <a href="contacto.html" class="btn btn-outline-warning mt-2">¡Reserva tu lugar!</a>
+          </div>
+        </div>
+      </div>
+      <!-- Curso 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title"><i class="bi bi-fire"></i> Tostado Artesanal</h5>
+            <p class="card-text">León, el dueño, te guía por todos los secretos del tueste. ¡Del grano verde a la taza!</p>
+            <ul>
+              <li>Práctica en vivo</li>
+              <li>Incluye muestra de café tostado</li>
+              <li>Para curiosos y profesionales</li>
+            </ul>
+            <a href="contacto.html" class="btn btn-outline-danger mt-2">¡Aprende a tostar!</a>
+          </div>
+        </div>
+      </div>
+      <!-- Curso 4 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title"><i class="bi bi-chat-dots"></i> Charlas y Degustaciones</h5>
+            <p class="card-text">Sumate a nuestras charlas con expertos y disfruta degustaciones únicas. ¡Sumergite en el mundo del café de especialidad!</p>
+            <ul>
+              <li>Charlas temáticas</li>
+              <li>Degustaciones guiadas</li>
+              <li>Networking con apasionados del café</li>
+            </ul>
+            <a href="contacto.html" class="btn btn-outline-primary mt-2">¡Quiero participar!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="mt-5 text-center text-muted">¿Tenés dudas? <a href="mailto:leononofrio98@gmail.com">¡Escribinos!</a></p>
+  </div>
+</section>
+
+
+
+
+
+    <!-- ... Contenido principal ... -->
+
+<!-- Sobre Nosotros -->
+<section class="sobre-nosotros-section py-4">
+    <div class="container">
+        <h2 class="mb-3" style="color:#a67c52;">Sobre Aconcagua Roasters</h2>
+        <p>
+            <b>Aconcagua Roasters</b> es un pequeño tostadero de café artesanal nacido del sueño de compartir el verdadero sabor del café de especialidad. Comenzamos como un emprendimiento familiar, tostando pequeños lotes en el corazón del barrio, y hoy queremos que más personas conozcan nuestra pasión por el café.
+        </p>
+        <p>
+            Nuestros productos más vendidos son el <b>Café en Grano Clásico</b> y el <b>Blend de la Casa</b>, elegidos tanto por minoristas como por cafeterías y comercios locales. Creemos en la calidad, la frescura y el trato directo con nuestros clientes.
+        </p>
+        <p>
+            Realizamos talleres y cursos porque queremos compartir el arte del café: desde el tostado y la molienda hasta la preparación de la taza perfecta. ¡Sumate a nuestra comunidad y descubrí el mundo del café con nosotros!
+        </p>
+    </div>
+</section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Tostadero Aconcagua Roasters </p>
+        </div>
+        <footer class="footer mt-4">
+  <div class="p-3 bg-light rounded">
+    <p><b>Email:</b> <a href="mailto:leon.Onofrio@tostaderocafe.com">leon.Onofrio@tostaderocafe.com</a></p>
+    <p><b>Tel:</b> 2613439599</p>
+    <p><b>Dirección:</b> Las Heras 599, Godoy Cruz, Mendoza</p>
+  </div>
+</footer>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

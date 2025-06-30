@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Productos | Aconcagua Roasters</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background: url('fondo-cafe.jpg') no-repeat center center fixed; background-size: cover; }
+        .bg-overlay { background: rgba(111, 78, 55, 0.5); position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 0; }
+        .main-content, footer { position: relative; z-index: 1; }
+        .navbar { background: rgba(255,255,255,0.95) !important; box-shadow: 0 2px 8px rgba(111,78,55,0.10); }
+        .navbar-brand, .nav-link { color: #6f4e37 !important; font-weight: 600; }
+        .nav-link.active, .nav-link:hover { background: #a67c52 !important; color: #fff !important; border-radius: 5px; }
+        footer { background: rgba(255,255,255,0.97); color: #6f4e37; text-align: center; padding: 18px 0; font-size: 1rem; letter-spacing: 1px; box-shadow: 0 -2px 8px rgba(111,78,55,0.10); border-top-left-radius: 24px; border-top-right-radius: 24px; margin-top: 30px; }
+    </style>
+</head>
+<body>
+    <div class="bg-overlay"></div>
+    <!-- Navbar -->
+    <!-- Pega aquí el código de la navbar, cambiando la clase active a Productos -->
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Aconcagua Roasters</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ventas.html">Ventas</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cursos.html">Cursos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="main-content py-5">
+        <div class="container">
+            <h1 class="mb-4" style="color:#6f4e37;">Nuestros Productos</h1>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-3">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTpAwylQHUCU5GU4BYaLow1IKjvTGWwaLmsQ&s" alt="Café en grano" class="mx-auto mb-3" width="100" height="100" style="border-radius:50%;">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:#a67c52;">Café en Grano</h5>
+                            <p class="card-text">Para quienes buscan frescura y aroma. Presentaciones de 1kg, 500g y 250g.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-3">
+                        <img src="https://www.bonka.es/themes/custom/bonka/img/lista-prensa-tipos-de-cafe-molido.jpg" alt="Café molido" class="mx-auto mb-3" width="100" height="100" style="border-radius:50%;">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:#a67c52;">Café Molido</h5>
+                            <p class="card-text">Listo para preparar en filtro, prensa francesa o espresso. Presentaciones de 1kg, 500g y 250g.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-3">
+                        <img src="https://tiendadecafe.com.ar/wp-content/uploads/2021/03/Productos_cafe_packs_beans01-600x600.jpg" alt="Blend especial" class="mx-auto mb-3" width="100" height="100" style="border-radius:50%;">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color:#a67c52;">Blend Especial</h5>
+                            <p class="card-text">Mezclas exclusivas para paladares exigentes. ¡Consultá por ediciones limitadas!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ... Contenido principal ... -->
+
+<!-- Sobre Nosotros -->
+<section class="sobre-nosotros-section py-4">
+    <div class="container">
+        <h2 class="mb-3" style="color:#a67c52;">Sobre Aconcagua Roasters</h2>
+        <p>
+            <b>Aconcagua Roasters</b> es un pequeño tostadero de café artesanal nacido del sueño de compartir el verdadero sabor del café de especialidad. Comenzamos como un emprendimiento familiar, tostando pequeños lotes en el corazón del barrio, y hoy queremos que más personas conozcan nuestra pasión por el café.
+        </p>
+        <p>
+            Nuestros productos más vendidos son el <b>Café en Grano Clásico</b> y el <b>Blend de la Casa</b>, elegidos tanto por minoristas como por cafeterías y comercios locales. Creemos en la calidad, la frescura y el trato directo con nuestros clientes.
+        </p>
+        <p>
+            Realizamos talleres y cursos porque queremos compartir el arte del café: desde el tostado y la molienda hasta la preparación de la taza perfecta. ¡Sumate a nuestra comunidad y descubrí el mundo del café con nosotros!
+        </p>
+    </div>
+</section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Tostadero Aconcagua Roasters</p>
+        </div>
+        <footer class="footer mt-4">
+  <div class="p-3 bg-light rounded">
+    <p><b>Email:</b> <a href="mailto:leon.Onofrio@tostaderocafe.com">leon.Onofrio@tostaderocafe.com</a></p>
+    <p><b>Tel:</b> 2613439599</p>
+    <p><b>Dirección:</b> Las Heras 599, Godoy Cruz, Mendoza</p>
+  </div>
+</footer>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
