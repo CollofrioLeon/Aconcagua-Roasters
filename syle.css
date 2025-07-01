@@ -1,4 +1,3 @@
-/* Fondo con imagen y superposición */
 body, html {
     height: 100%;
     margin: 0;
@@ -9,7 +8,6 @@ body {
     font-family: 'Segoe UI', Arial, sans-serif;
     min-height: 100vh;
     position: relative;
-    background: url('descarga.jpeg') no-repeat center center fixed;
     background-size: cover;
     z-index: 1;
 }
@@ -17,12 +15,11 @@ body {
 .background-overlay {
     position: fixed;
     top: 0; left: 0; width: 100vw; height: 100vh;
-    background: rgba(111, 78, 55, 0.45); /* filtro café */
+    background: rgba(111, 78, 55, 0.45); 
     z-index: 0;
     pointer-events: none;
 }
 
-/* Encabezado fijo y separado */
 header {
     position: relative;
     z-index: 2;
@@ -56,8 +53,6 @@ nav a:hover, nav a.active {
     background: #a67c52;
     color: #fff;
 }
-
-/* Contenido central destacado */
 main {
     position: relative;
     z-index: 2;
@@ -97,8 +92,6 @@ main img {
     font-size: 1.1rem;
     color: #3e2723;
 }
-
-/* Pie de página separado */
 footer {
     position: relative;
     z-index: 2;
